@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="list.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/af25c5ca7f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div>
+            <nav class="nav">
+                <li class="logo"><a href="#/US"><b>MYTODO</b></a></li>
+                <li class="search">
+                    <input type="text" placeholder="Search..." class="search-field">
+                </li>
+
+            </nav>
+        </div>
+    </section>
+    <section>
+        <div>
+            <nav class="sidebar close">
+                <header>
+                    <div class="image-text">
+                        <span class="image">
+                            <i class="fa-solid fa-check fa-fade"></i>
+                        </span>
+
+                        <div class="text header-text">
+                            <span class="name">MYTODO</span>
+                            <span class="date">Today is</span>
+                          
+                        </div>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right" id="arrow"></i>
+                </header>
+
+                <div class="menu-bar">
+                    <div class="menu">
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class="fa-solid fa-inbox icon"></i>
+                                    <span class="text nav-text">My Inbox</span>
+                                </a>
+                            </li>
+
+                             <li class="nav-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-calendar-days icon"></i>
+                                        <span class="text nav-text">Upcoming</span>
+                                    </a>
+                            </li>
+
+                             <li class="nav-link">
+                                    <a href="#">
+                                        <i class="fa-regular fa-star icon"></i>
+                                        <span class="text nav-text">Today</span>
+                                    </a>
+                            </li>
+
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class="fa-regular fa-bookmark icon"></i>
+                                    <span class="text nav-text">Completed</span>
+                                </a>
+                        </li>
+
+                    </div>
+                </div>
+
+                <div class="bottom-content">
+                    <li class="">
+                        <a href="">
+                            <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
+                            <span class="text nav-text">Sign Out</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class="fa-solid fa-moon icon"></i>
+                            
+                        </div>
+                        <span class="mode-text text">Dark Mode</span>
+
+                        <div class="toggle-swicth">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </div>
+            </nav>
+        </div>
+    </section>
+    
+</body>
+</html>
