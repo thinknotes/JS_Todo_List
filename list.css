@@ -1,6 +1,54 @@
 body {
     font-family: Arial, Helvetica;
     height: 1200px;
+    margin: 0;
+}
+
+/* Home Page Code */
+.today {
+    font-weight: 200;
+    margin: auto;
+    margin-left: 190px;
+}
+
+.d {
+    font-weight: 200;
+    margin: auto;
+    border: 1px solid blue;
+    /* margin-left: 190px; */
+}
+
+.fy {
+    margin:auto;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+
+
+#rectangle {
+    width: 200px;
+    height: 200px;
+    background: #f8f9fa;
+    margin: auto;
+    margin-left: 200px;
+    margin-top: 20px;
+    border-radius: 20px;
+   
+}
+
+.inbox {
+    text-align: left;
+    padding: 10px;
+    font-weight: 300;
+}
+
+li .in {
+    background: #555;
+}
+
+#rectangle:hover {
+    color: cornflowerblue;
 }
 
 /* NavBar CSS Code  */
@@ -12,6 +60,7 @@ body {
     padding: 1rem;
     display: flex;
     gap: 55%;
+    border: 1px solid green;
 }
 
 .nav .logo {
@@ -34,8 +83,9 @@ li {
     list-style: none;
 }
 
+
 .search-field  {
-   border: none;;
+   border: none;
    border-radius: 20px;
    padding: 5px;
 }
@@ -51,16 +101,33 @@ li {
     height: 100%;
     width: 200px;
     background-color: aliceblue;
+    border-radius: 20px;
     transition: var(--tran-05);
 }
 
-.sidebar.close {
+
+.open {
     width: 88px;
 }
 
-.sidebar.close .text {
+.close{
+    width: 65px;
+}
+
+.nav-text-open{
     opacity: 0;
 }
+
+.sidebar.close .text{
+    opacity: 0;
+}
+
+.sidebar.open .text {
+    opacity: 0;
+    width: 88px;
+
+}
+
 
 .sidebar .image-text .fa-fade {
     width: 40px;
@@ -95,6 +162,7 @@ header .image-text .header-text {
 
 .header-text .name {
     font-weight: 600;
+    padding: 10px;
 }
 
 .header-text .date {
@@ -113,7 +181,10 @@ header .image-text .header-text {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    cursor: pointer;
 }
+
+
 
 .sidebar header {
     position: relative;
