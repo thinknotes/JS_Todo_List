@@ -1,57 +1,11 @@
+/* NavBar Css Code */
+
+
 body {
     font-family: Arial, Helvetica;
     height: 1200px;
     margin: 0;
 }
-
-/* Home Page Code */
-.today {
-    font-weight: 200;
-    margin: auto;
-    margin-left: 190px;
-}
-
-.d {
-    font-weight: 200;
-    margin: auto;
-    /* border: 1px solid blue; */
-    /* margin-left: 190px; */
-}
-
-.fy {
-    margin:auto;
-    margin-left: 200px;
-    margin-top: 40px;
-}
-
-
-
-#rectangle {
-    width: 200px;
-    height: 200px;
-    background: #f8f9fa;
-    margin: auto;
-    margin-left: 200px;
-    margin-top: 20px;
-    border-radius: 20px;
-   
-}
-
-.inbox {
-    text-align: left;
-    padding: 10px;
-    font-weight: 300;
-}
-
-li .in {
-    background: #555;
-}
-
-#rectangle:hover {
-    color: cornflowerblue;
-}
-
-/* NavBar CSS Code  */
 
 .nav {
     background-color: #f8f9fa;
@@ -90,9 +44,74 @@ li {
    padding: 5px;
 }
 
+/* Home Css Code */
+.name {
+    text-align: center;
+}
 
-/* Sidebar CSs Code  */
+.container {
+    text-align: center;
+    padding: 2rem 2.5em;
+    background-color:  #f8f9fa;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+    border-radius: 0.8em;
+    margin: 0 auto;
+    
+    width: 400px;
+ 
+}
 
+.app {
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.pt {
+    font-size: 13px;
+    text-align: left;
+    font-weight: 200;
+}
+
+#wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 1em;
+}
+
+#wrapper input {
+    width: 100%;
+    background-color: transparent;
+    color: #555;
+    border: none;
+    border-bottom: 2px solid gainsboro;
+}
+
+#wrapper input:focus {
+    outline: none;
+    border-color: cornflowerblue;
+}
+
+#Wrapper button {
+    cursor: pointer;
+    
+}
+
+
+
+#error {
+    text-align: center;
+    background-color: #f8f9fa;
+    color: red;
+    margin-top: 1.5em;
+    padding: 1em 0;
+    border-radius: 0.8em;
+    display: none;
+}
+
+
+/* SideBar CSS Code  */
 
 .sidebar {
     position: absolute;

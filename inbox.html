@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TodoList</title>
-    <link rel="stylesheet" href="list.css">
+    <title>My Inbox</title>
+    <link rel="stylesheet" href="inbox.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/af25c5ca7f.js" crossorigin="anonymous"></script>
 </head>
@@ -22,24 +22,20 @@
         </div>
     </section>
     <section>
-        <span class="date" id = "date">Today </span>
-        <h2 id="current-time" class="d">Loading Time...</h2>
-        <div class="">
-             <h2 class="fy">For You</h2>
-            <div id="rectangle">
-              <h1 class="inbox">Inbox</h1>
-              <ul>
-                <li class="in">Email Maya</li>
-                <li class="in">Talk to HR</li>
-              </ul>
-             </div>
-            <div id="rectangle">
-                <h1 class="inbox">Calendar</h1>
-                <ul>
-                    <li class="in">Nothing Planned!</li>
-                </ul>
-             </div>
-            
+        <h1 class="name">My Inbox </h1>
+        <div class="app">
+            <div class="container">
+                <div id="wrapper">
+                    <input type="text" placeholder="Add A Todo To MY Inbox"/>
+                    <button id="add-btn">Add</button>
+                </div>
+                <div id="tasks">
+                    <p id="pending-tasks" class="pt">
+                        Your Inbox Has <span class="count-value">0</span> Tasks In My Inbox To Complete
+                    </p>
+                </div>
+            </div>
+            <p id="error">TextField Cannot Be Empty!</p>
         </div>
     </section>
     <section>
@@ -56,6 +52,7 @@
                             <span class="date" id = "date">Today </span>
                           
                         </div>
+                        
                     </div>
 
                     <i class="fa-solid fa-chevron-right" id="arrow"></i>
@@ -67,6 +64,13 @@
                                 <a href="inbox.html">
                                     <i class="fa-solid fa-inbox icon"></i>
                                     <span class="text nav-text">My Inbox</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-link">
+                                <a href="Todolist.html">
+                                    <i class="fa-solid fa-house icon"></i>
+                                    <span class="text nav-text">Home</span>
                                 </a>
                             </li>
 
@@ -116,6 +120,7 @@
                 </div>
             </nav>
         </div>
+        
     </section>
     
 </body>

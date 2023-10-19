@@ -1,5 +1,5 @@
 
-
+//Side Bar Code
 const arrow = document.getElementById("arrow");
 const sideBar = document.getElementById("side-bar");
 const navItems = document.querySelectorAll(".nav-link");
@@ -27,6 +27,51 @@ if (hours > 11) {
     document.write("AM")
 }
 
+// ToDo List Code 
+const addButton = document.getElementById("#add-btn");
+const newItemInput = document.getElementById(" wrapper input");
+const taskContainer = document.createElement("#tasks");
+const taskerror = document.getElementById("erorr");
+const countValve = document.getElementById("count-value");
+let taskCount = 0;
+
+function addTask() {
+    const taskInput = document.querySelector("input[type='text']");
+    const taskText = taskInput.value.trim();
+
+    if (taskText) {
+        const taskContainer = document.getElementById("tasks");
+        const taskElement = document.createElement("div");
+        taskElement.classList.add("task");
+        taskElement.innerHTML = `
+        <span class="task-text">${taskText}</span>
+        <button class="delete-btn">Delete</button>
+    `;
+     
+    taskElement.querySelector(".delete-btn").addEventListener("click", () => {
+        tasksContainer.removeChild(taskElement);
+        updateTaskCount();
+    });
+
+    tasksContainer.appendChild(taskElement);
+    taskInput.value = "";
+    updateTaskCount();
+    }     
+}
+
+function updateTaskCount() {
+    const pendingTasks = document.querySelectorAll(".tasks").length;
+    document.querySelector(".count-value").textContent = pendingTasks;
+
+}
+
+document.getElementById("add-btn").addEventListener("click", addTask);
+
+document.querySelector("input[type='text']").addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        addTask();
+    }
+});
 
 setInterval(() => {
     let time = document.getElementById("current-time");
@@ -55,5 +100,10 @@ function formatDate(date) {
         return date.toLocaleDateString(undefined, options);
 }
 
+//Consel Log
+
 console.log(month + "/" + day + "/" + year)
 console.log(currentTime + "/" + hours + "/" + minutes)
+console.log()
+
+
