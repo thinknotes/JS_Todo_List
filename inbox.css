@@ -110,6 +110,38 @@ li {
     display: none;
 }
 
+.divstyling {
+    font-family: Arial, Helvetica;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+.itembutton {
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    margin-left: 10px;
+  
+}
+
+
+.item-p-styling{
+    text-align: left;
+    background-color: #f8f9fa;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+    height: 40px;
+    border-radius: 5px;
+    width: 460px;
+    padding: 0px 10px 0px 10px;
+    
+}
+
+.strike {
+    text-decoration: line-through;
+}
 
 /* SideBar CSS Code  */
 
@@ -154,7 +186,6 @@ li {
     height: 40px;
     border-radius: 6px;
     padding: 5px;
-    /* border: 1px solid blue; */
     background-color: #f8f9fa;
     margin: 5px;
     text-align: center;
